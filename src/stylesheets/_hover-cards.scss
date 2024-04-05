@@ -1,0 +1,31 @@
+//hover card styles
+.hover-cards {
+    .container {
+      margin: 0 60px 0 60px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-self: center;
+  
+      .card {
+        @include card-styles;
+        padding: 20px;
+        margin: $margin-10;
+  
+        .title {
+          font-size: 30px;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 800;
+          margin: 0;
+        }
+  
+        .subtitle {
+          font-size: 18px;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 1px 0;
+        }
+      }
+    }
+  }

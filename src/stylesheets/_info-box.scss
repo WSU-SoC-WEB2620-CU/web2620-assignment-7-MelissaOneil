@@ -1,0 +1,14 @@
+//info-box styles
+.info-box {
+    padding: 5rem;
+    text-align: center;
+    color: lightgray;
+    margin: $margin-10 auto;
+  
+    .subtitle {
+      padding-top: 1rem;
+      font-size: 18px;
+      color: rgb(113, 113, 113);
+      line-height: 1.5;
+    }
+  }

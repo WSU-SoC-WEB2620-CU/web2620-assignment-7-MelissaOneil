@@ -1,0 +1,57 @@
+//icon card styles
+.row {
+    margin: 20px 0;
+    padding: 80px;
+    display: flex;
+    flex: wrap;
+  
+  
+    .col-1,
+    .col-2,
+    .col-3 {
+      width: 100%;
+      padding: 0 15px;
+      max-width: calc(100% / 3 - 20px);
+    }
+  
+    .card {
+      @include card-styles;
+  
+      .card-content {
+        padding: 20px;
+      }
+  
+      .content {
+        h4 {
+          color: lightgray;
+          margin-bottom: $margin-10;
+        }
+  
+        p {
+          margin-bottom: $margin-10;
+        }
+  
+        a {
+          color: #007bff;
+          text-decoration: none;
+        }
+      }
+  
+      .card-icon {
+        font-size: 8rem;
+        margin: 20px auto;
+        color: #007bff;
+      }
+    }
+  
+    @media (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+  
+      .col-1,
+      .col-2,
+      .col-3 {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }

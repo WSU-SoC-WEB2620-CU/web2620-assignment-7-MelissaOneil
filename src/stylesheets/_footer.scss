@@ -1,0 +1,105 @@
+//footer styles
+.footer {
+    background-color: $dark-bg;
+    color: $primary;
+    padding: 3rem 1.5rem;
+
+    .container {
+        .columns {
+            display: flex;
+            gap: 7rem;
+            justify-content: center;
+
+            .column {
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        position: relative;
+                        padding-left: 30px;
+                        margin-bottom: $margin-10;
+
+                        &::before {
+                            content: '\f1b2';
+                            font-family: 'FontAwesome';
+                            font-weight: 600;
+                            position: absolute;
+                            left: 0;
+                            color: $primary;
+                        }
+
+                        a {
+                            color: $primary;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: darken($primary, 10%);
+                            }
+                        }
+                    }
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 1rem;
+                    margin: 0 .7rem 0 .4rem;
+                }
+            }
+        }
+
+        .content {
+            margin-top: 2rem;
+
+            .icon {
+                color: $primary;
+                font-size: 2rem;
+            }
+
+            .control {
+                a {
+                    text-decoration: none;
+                }
+
+                .tags {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0;
+
+                    .tag {
+                        &.is-dark {
+                            background-color: lighten($dark-bg, 10%);
+                            padding: 0.25rem 0.5rem;
+                            border-top-left-radius: $radius;
+                            border-bottom-left-radius: $radius;
+                            color: white;
+                        }
+
+                        &.is-info {
+                            background-color: rgb(90, 178, 225);
+                            padding: 0.25rem 0.5rem;
+                            border-top-right-radius: $radius;
+                            border-bottom-right-radius: $radius;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //media queries
+    @media screen and (max-width: $mobile-breakpoint) {
+        .container {
+            .columns {
+                justify-content: center;
+                flex-direction: column;
+                gap: 2rem;
+
+                .column {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

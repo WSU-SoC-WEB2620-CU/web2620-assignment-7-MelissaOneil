@@ -1,0 +1,39 @@
+//header styles
+.header {
+    background: linear-gradient(to right, #8db9c7, #12a7e2);
+}
+
+.header-body {
+    padding: 6rem 0;
+    text-align: center;
+
+    .title {
+        color: white;
+    }
+
+    .subtitle {
+        color: white;
+        padding-top: 2rem;
+        font-size: 18px;
+    }
+}
+
+.header-banner {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    background-color: $dark-bg;
+    color: lightgray;
+    font-size: 14px;
+    height: 40px;
+    padding: 20px;
+
+    .tag {
+        background-color: $tag-bg;
+        color: black;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+}
